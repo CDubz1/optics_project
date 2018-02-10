@@ -37,11 +37,16 @@ nav {
   background-color: cadetblue;
   color: white;
 }
+
 .menu {
   background-color: cadetblue;
   color: white;
   display: flex;
   align-items: center;
+}
+
+.sm-menu {
+  display: none;
 }
 
 nav img {
@@ -111,6 +116,7 @@ h1 {
   width: 35%;
   margin-right: 5%;
   margin-bottom: 4rem;
+  align-content: center;
 }
 
 .title {
@@ -119,13 +125,14 @@ h1 {
   color: white;
   font-weight: bold;
   max-width: 10rem;
+
 }
 
 .info p {
   padding: 1rem 0;
 }
 
- .container {
+.container {
   display: flex;
   align-items: center;
 
@@ -137,4 +144,86 @@ h1 {
 .copyright img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .main-banner {
+    display: inline-block;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    background-color: white;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    height: 17rem;
+  }
+  .menu {
+    display: none;
+  }
+
+  .sm-menu {
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  nav span, footer span {
+    display: none;
+  }
+
+  .copyright img {
+    margin: 4rem auto;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main-banner {
+    display: inline-block;
+    padding: 1rem auto;
+    margin-top: 9rem;
+    margin-right: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .labels {
+    display: block;
+    justify-content: center;
+  }
+  .content {
+    font-size: 0.77rem;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .about {
+    display: block;
+    margin: auto;
+  }
+
+  .info {
+    width: 100%;
+  }
+  .title {
+    max-width: 100%;
+    text-align: center;
+  }
+  p {
+    font-size: 0.77rem;
+
+  }
 }
